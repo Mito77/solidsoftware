@@ -73,7 +73,7 @@ class DioHelper {
         if (e.response.toString().contains('Invalid token')) {
           SharedPRefHelper().setBearerToken('');
           SharedPRefHelper().setUserData('');
-          ViewHelper(context).openMainPageWidgetScreen(1);
+
 
           return handler.next(DioError(
               requestOptions: RequestOptions(path: ''),

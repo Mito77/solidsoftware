@@ -4,7 +4,6 @@ import 'package:solidsoftware/ui/home/home_bloc.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
-import 'package:solidsoftware/ui/navigator/navigator.dart';
 
 import 'package:flutter_animated_dialog/flutter_animated_dialog.dart';
 import 'package:solidsoftware/utilities/CustomText.dart';
@@ -179,9 +178,6 @@ class ViewHelper {
     }
   }
 
-  void openMainPageWidgetScreen(index) {
-    pushScreen(MainPageWidget(index));
-  }
 
   void openHomePageWidget() {
     pushScreen(homePageWidget());

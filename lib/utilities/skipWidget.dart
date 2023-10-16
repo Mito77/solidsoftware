@@ -9,7 +9,6 @@ import 'package:flutter_screenutil/flutter_screenutil.dart';
 Widget skipWidget(context) {
   return InkWell(
     onTap: () {
-      ViewHelper(context).openMainPageWidgetScreen(1);
     },
     child: CustomText(
       customTextStyle: BoldStyle(

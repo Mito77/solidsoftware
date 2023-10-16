@@ -1,5 +1,4 @@
 
-import 'package:solidsoftware/ui/navigator/navigator.dart';
 import 'package:flutter/services.dart';
 import 'package:flutter/material.dart';
 import 'package:solidsoftware/models/app_helper.dart';
@@ -7,6 +6,7 @@ import 'package:solidsoftware/utilities/app_colors.dart';
 
  import 'package:sentry_flutter/sentry_flutter.dart';
  import 'my_app.dart';
+import 'ui/home/homePage.dart';
 
 Future<void> main() async {
 
@@ -43,6 +43,6 @@ Future<void> initMyApp() async {
       options.tracesSampleRate = 1.0;
     },
     appRunner: () => runApp( MyApp(
-        startWidget: MainPageWidget(1))),
+        startWidget: homePageWidget())),
   );
 }
